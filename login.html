@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Log in</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+
+    <script>
+      // Select the password input field and the form
+      const passwordInput = document.querySelector("#password");
+      const signupForm = document.querySelector("form");
+
+      // Add an event listener to the form to check the password when the user submits the form
+      signupForm.addEventListener("submit", (event) => {
+        // Retrieve the password from the input field
+        const password = passwordInput.value;
+
+        // Check if the password is at least 8 characters long
+        if (password.length < 8) {
+          // Prevent the form from submitting
+          event.preventDefault();
+
+          // Display an error message to the user
+          alert("Password must be at least 8 characters long");
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <p class="title1">Nepal Seasonal Crop Advisor</p>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="login.html">Seasonal Crops</a></li>
+        
+        <li class="login"><a href="login.html">LOGIN</a></li>
+      </ul>
+      <!-- <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li class="login"><a href="#">LOGIN</a></li>
+          </ul>
+        </div> -->
+    </div>
+    <script
+      src="https://kit.fontawesome.com/3b3ef2d340.js"
+      crossorigin="anonymous"
+    ></script>
+    <div class="background">
+      <!-- <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div> -->
+      <form method="post" action="signin.php">
+        <h3>LOGIN</h3>
+        <label for="email">Email</label>
+        <input name="email" type="email" placeholder="Email" id="username" required />
+        <label for="password">Password</label>
+        <input name="password" type="password" placeholder="Password" id="password" required />
+        <button style="text-align: center">Log In</button>
+        <h5 style="padding-top: 5%; text-align: center">
+          Don't Have an account? <a href="signup.html">Sign Up</a>.<br />
+        </h5>
+        <div class="social"></div>
+      </form>
+      <script>  
+        function validation()  
+        {  
+            var id=document.f1.email.value;  
+            var ps=document.f1.password.value;  
+            if(id.length=="" && ps.length=="") {  
+                alert("User Name and Password fields are empty");  
+                return false;  
+            }  
+            else  
+            {  
+                if(id.length=="") {  
+                    alert("User Name is empty");  
+                    return false;  
+                }   
+                if (ps.length=="") {  
+                alert("Password field is empty");  
+                return false;  
+                }  
+            }                             
+        }  
+    </script>
+    </div>
+  </body>
+</html>

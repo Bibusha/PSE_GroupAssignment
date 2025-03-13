@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sign Up</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="background">
+      <div class="navbar">
+        <!-- <img src="logo.png" alt="Logo" /> -->
+        <p class="title1">Nepal Seasonal Crop Advisor</p>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="products.html">Seasonal Crops</a></li>
+          
+          <li class="login"><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+
+      <form name="f1" action="signup.php" onsubmit="return validation()" method="post">
+        <h3>SIGN UP</h3>
+        <div class="input-row">
+          <div class="input-column">
+            <label for="fname">First Name</label>
+            <input name="fname" type="text" placeholder="FirstName" id="fname" required />
+          </div>
+          &emsp14; &emsp14; &emsp14; &emsp14;
+          <div class="input-column">
+            <label for="lname">Last Name</label>
+            <input name="lname" type="text" placeholder="LastName" id="lname" required />
+          </div>
+        </div>
+        <label for="Email">Email</label>
+        <input type="email" placeholder="Email" id="Email" name="email" required />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          placeholder="Password (at least 8 characters)"
+          id="password"
+          name="password" required
+        />
+        <label for="re_password">Re-Password</label>
+        <input
+          type="password"
+          placeholder="Re-Enter Your Password"
+          id="re_password" required
+        />
+        <button type="submit" style="text-align: center">Sign Up</button>
+        <h5 style="padding-top: 2%; text-align: center">
+          By clicking "Sign Up", You agree to our Policy
+        </h5>
+        <div class="social"></div>
+      </form>
+
+      <script>
+        function validation() {
+          var email = document.f1.email.value;
+          var password = document.f1.password.value;
+          var confirmPassword = document.f1.re_password.value;
+          var errorMessage = document.getElementById("error-message");
+
+          // Check if the email or password fields are empty
+          if (email.length === "" || password.length === "") {
+            alert("Email and Password fields are required.");
+            return false; // Prevent form submission
+          }
+
+          // Check if the confirm password matches the password
+          if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return false; // Prevent form submission
+          }
+
+          // If all validations pass, return true
+          return true;
+        }
+      </script>
+    </div>
+  </body>
+</html>

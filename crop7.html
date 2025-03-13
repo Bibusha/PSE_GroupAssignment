@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Wheat, a spring crop grown from September to November, including its growing period and description.">
+    <title>Wheat - Seasonal Crops</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0e9e1; /* Light green background */
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh; /* Ensures full-page background coverage */
+        }
+
+        header {
+            background-color: #4a5e4d; /* Dark green header */
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-family: 'Georgia', serif;
+            margin-bottom: 1rem;
+        }
+
+        .back-link-container {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #6b9b6d; /* Medium green for the icon-like button */
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-link-container:hover {
+            background-color: #5a8a5c; /* Darker green on hover */
+            transform: translateY(-2px);
+        }
+
+        .back-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem; /* Space between icon and text */
+        }
+
+        .back-link::before {
+            content: "←"; /* Arrow icon */
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .crop-details {
+            background-color: #f0f5f0; /* Very light green card background */
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center-align content */
+        }
+
+        .crop-image {
+            max-width: 600px; /* Larger image */
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 0 auto 1.5rem auto; /* Center the image with margin */
+            display: block;
+        }
+
+        .crop-info {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .crop-info h2 {
+            font-size: 1.8rem;
+            color: #4a5e4d; /* Dark green for headings */
+            margin-bottom: 1rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .crop-info p {
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .crop-info strong {
+            color: #6b9b6d; /* Medium green for emphasis */
+        }
+
+        @media (max-width: 768px) {
+            .crop-details {
+                padding: 1.5rem;
+            }
+
+            .crop-image {
+                max-width: 400px; /* Slightly smaller on mobile */
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .crop-info h2 {
+                font-size: 1.5rem;
+            }
+
+            .crop-info p {
+                font-size: 0.9rem;
+            }
+
+            .back-link-container {
+                padding: 0.4rem 0.8rem;
+            }
+
+            .back-link {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Okra</h1>
+        <div class="back-link-container">
+            <a href="products.html" class="back-link">Back to Seasonal Crops</a>
+        </div>
+    </header>
+    <main>
+        <section class="crop-details">
+            <img src="okra.jpeg" alt="Tomatoes" class="crop-image">
+            <div class="crop-info">
+                <h2>Season: Summer (June-August)</h2>
+              
+                <p><strong>Description:</strong>: Okra is highly heat-tolerant and grows best in temperatures above 75°F. It requires full sunlight and well-drained, sandy or loamy soil. A nitrogen-rich fertilizer encourages vigorous growth. Regular harvesting (every 2-3 days) ensures continuous production, as pods mature quickly within 50 to 60 days. Okra plants are drought-tolerant but benefit from consistent watering for optimal yield.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

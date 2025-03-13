@@ -1,0 +1,281 @@
+        /* General Body Styling */
+        body {
+          font-family: 'Quicksand', sans-serif;
+          background-color: #a3c585;
+          margin: 0;
+          padding: 0;
+        }
+        
+        /* Improved Product Section */
+        .products {
+          padding: 10%;
+          display: flex;
+          justify-content: flex-start; 
+          /* flex-wrap: wrap; */
+          gap: 20px; /* Adjust the gap between items */
+        }
+        
+        /* Product Card Enhancements */
+        .product {
+          background: #badd80;
+          padding: 25px;
+          border-radius: 12px;
+          border: 1px solid #4b6043;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          text-align: center;
+          width: 350px;
+          min-height: 400px;
+          transition: all 0.3s ease-in-out;
+        }
+        
+        .product:hover {
+          transform: scale(1.03);
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Crop Item Layout */
+        .crop-list {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+          margin-top: 20px;
+        }
+        
+        /* Individual Crop Items */
+        .crop-item {
+          text-align: center;
+          width: 120px;
+          transition: transform 0.3s ease;
+        }
+        
+        .crop-item img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .crop-item p {
+          font-size: 16px;
+          color: #4b6043;
+          margin-top: 8px;
+        }
+        
+        .crop-item:hover {
+          transform: scale(1.1);
+        }
+        
+        /* Improved Heading Styling */
+        h2 {
+          font-size: 28px;
+          font-weight: bold;
+          /* color: #4b6043; */
+          margin-bottom: 10px;
+        }
+        
+        h4 {
+          font-size: 18px;
+          font-weight: 500;
+          color: #000000;
+        }
+
+.navbar {
+  background-color: #4b6043;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  opacity: 100%;
+}
+
+.navbar img {
+  height: 210px;
+  padding-left: 3%;
+  padding-top: 5%;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.title1{
+  /* font-family: 'Times New Roman', Times, serif; */
+  color: #ffffff;
+  font-size: 45px;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  background: #4b6043;
+  box-shadow: 0 0 10px 5px #20331b;
+  color: aliceblue;
+  transform: scale(1.05);
+}
+
+.navbar .login a:hover {
+  background: #95bb72;
+  box-shadow: 0 0 10px 5px #20331b;
+  color: #000000;
+  transform: scale(1.05);
+}
+
+.navbar .login {
+  background: #75975e;
+  box-shadow: 0 0 10px 5px #20331b;
+  transition: all 0.3s ease-out;
+  height: 40px;
+  width: 78px;
+  padding: 10px 0;
+  border-radius: 50px;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar ul {
+    display: none;
+  }
+  .navbar .menu-icon {
+    display: block;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image {
+  display: inherit;
+  position: relative;
+  margin-right: 50px;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  display: block;
+  z-index: 2;
+}
+
+.shadow {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.autumn-palette{
+  color: #ff0000;
+}
+.spring-palette {
+  color: #fe5ec9;
+}
+.winter-palette {
+color: #1B3A4B;
+}
+.summer-palette {
+color: #ffdd02;
+}
+
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  flex-basis: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 0.5px solid #4b6043;
+  box-shadow: 0 0 50px rgba(8, 7, 16, 0.6);
+  padding: 2.5%;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: -3%;
+  text-align: center;
+  
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.circles div:hover {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  bottom: -150px;
+  animation: animate 15s linear infinite;
+  opacity: 1%;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.5;
+    border-radius: 20%;
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    border-radius: 40%;
+    transform: translateY(-1000px) rotate(750deg);
+  }
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
